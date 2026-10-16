@@ -109,7 +109,6 @@ export class ExcelReader {
         properties: {
           sidc,
           name: locatorData[nameKey]?.v,
-          observation_datetime: Date.now(),
           staff_comments: `${locatorData[locationKey]?.v}, ${locatorData[regionKey]?.v}`,
           comments: [
             `${locatorData[regionKey]?.v}`,
@@ -144,7 +143,6 @@ export class ExcelReader {
         properties: {
           sidc,
           name: lightData[nameKey]?.v,
-          observation_datetime: Date.now(),
           staff_comments: `${lightData[locationKey]?.v}, ${lightData[regionKey]?.v}`,
           comments: [`${lightData[regionKey]?.v}`, lightData[locationKey]?.v],
         },
